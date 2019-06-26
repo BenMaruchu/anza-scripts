@@ -1,26 +1,50 @@
 {
-  "name": "anza-scripts",
+  "name": "@BenMaruchu/anza-scripts",
   "version": "0.1.0",
   "description": "NPM scripts necessary for project development",
-  "main": "index.js",
-  "scripts": {
-    "test": "npm test"
-  },
+  "main": "lib/index.js",
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BenMaruchu/anza-scripts.git"
   },
-  "keywords": [
-    "npm",
-    "scripts",
-    "anzalab",
-    "module",
-    "package.json"
-  ],
+  "keywords": ["npm", "scripts", "anzalab", "module", "package.json"],
   "author": "Benson Maruchu",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/BenMaruchu/anza-scripts/issues"
   },
-  "homepage": "https://github.com/BenMaruchu/anza-scripts#readme"
+  "bin": {
+    "anza-commit": "bin/commit.js",
+    "anza-changelog": "bin/changelog.js",
+    "anza-lint": "bin/lint.js"
+  },
+  "homepage": "https://github.com/BenMaruchu/anza-scripts#readme",
+  "dependencies": {
+    "@commitlint/cli": ">=7.6.1",
+    "@commitlint/config-conventional": ">=7.6.0",
+    "@commitlint/travis-cli": ">=7.6.1",
+    "commitizen": ">=3.1.1",
+    "eslint": ">=6.0.1",
+    "cz-conventional-changelog": ">=2.1.0",
+    "eslint-config-airbnb": ">=17.1.0",
+    "eslint-config-prettier": ">=6.0.0",
+    "eslint-plugin-import": ">=2.18.0",
+    "eslint-plugin-jest": ">=22.7.1",
+    "eslint-plugin-jsdoc": ">=8.6.1",
+    "eslint-plugin-jsx-a11y": ">=6.2.1",
+    "eslint-plugin-prettier": ">=3.1.0",
+    "eslint-plugin-react": ">=7.14.2",
+    "generate-changelog": ">=1.7.1",
+    "husky": ">=2.3.0",
+    "lint-staged": ">=8.1.7",
+    "lodash": ">=4.17.11",
+    "prettier": ">=1.17.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/register": "^7.4.4"
+  }
 }
