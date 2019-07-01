@@ -31,7 +31,7 @@ In your `package.json` file in scripts object you can just do as
 ...
 ```
 
-> for react project in lint `script` use `anza-lint-react` instead
+> for react project in lint `script` use `anza-lint-react` instead of `anza-lint`
 
 ### Todo
 
