@@ -4,13 +4,7 @@ const path = require('path');
 const { CLIEngine } = require('eslint');
 
 const cli = new CLIEngine({
-  baseConfig: {
-    extends: ['plugin:prettier/recommended'],
-    rules: {
-      'prettier/prettier': 'error',
-    },
-  },
-  plugins: ['prettier'],
+  configFile: path.join(__dirname, '..', 'configs', 'eslint.json'),
   resolvePluginsRelativeTo: path.join(__dirname, '..', 'node_modules'),
   extensions: ['.js'],
   fix: true,

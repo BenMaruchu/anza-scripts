@@ -34,8 +34,10 @@
     "commitizen": ">=3.1.1",
     "cz-conventional-changelog": ">=2.1.0",
     "eslint": ">=6.0.1",
+    "eslint-config-airbnb": ">=17.1.0",
     "eslint-config-airbnb-base": ">=13.1.0",
     "eslint-config-prettier": ">=6.0.0",
+    "eslint-plugin-import": ">=2.18.0",
     "eslint-plugin-jest": ">=22.7.1",
     "eslint-plugin-jsdoc": ">=10.0.3",
     "eslint-plugin-jsx-a11y": ">=6.2.3",
@@ -51,8 +53,6 @@
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
-    "@babel/register": "^7.4.4",
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-plugin-import": "^2.18.0"
+    "@babel/register": "^7.4.4"
   }
 }
