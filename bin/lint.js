@@ -1,9 +1,18 @@
 #! /usr/bin/env node
 
+const path = require('path');
 const { CLIEngine } = require('eslint');
 
 const cli = new CLIEngine({
-  extensions: ['.js', '.jsx'],
+  baseConfig: {
+    extends: ['plugin:prettier/recommended'],
+    rules: {
+      'prettier/prettier': 'error',
+    },
+  },
+  plugins: ['prettier'],
+  resolvePluginsRelativeTo: path.join(__dirname, '..', 'node_modules'),
+  extensions: ['.js'],
   fix: true,
 });
 

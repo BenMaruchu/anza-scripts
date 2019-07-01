@@ -23,7 +23,8 @@
   "bin": {
     "anza-commit": "bin/commit.js",
     "anza-changelog": "bin/changelog.js",
-    "anza-lint": "bin/lint.js"
+    "anza-lint": "bin/lint.js",
+    "anza-lint-react": "bin/lint-react.js"
   },
   "homepage": "https://github.com/BenMaruchu/anza-scripts#readme",
   "dependencies": {
@@ -31,14 +32,13 @@
     "@commitlint/config-conventional": ">=8.0.0",
     "@commitlint/travis-cli": ">=8.0.0",
     "commitizen": ">=3.1.1",
-    "eslint": ">=6.0.1",
     "cz-conventional-changelog": ">=2.1.0",
-    "eslint-config-airbnb": ">=17.1.0",
+    "eslint": ">=6.0.1",
+    "eslint-config-airbnb-base": ">=13.1.0",
     "eslint-config-prettier": ">=6.0.0",
-    "eslint-plugin-import": ">=2.18.0",
     "eslint-plugin-jest": ">=22.7.1",
-    "eslint-plugin-jsdoc": ">=8.6.2",
-    "eslint-plugin-jsx-a11y": ">=6.2.1",
+    "eslint-plugin-jsdoc": ">=10.0.3",
+    "eslint-plugin-jsx-a11y": ">=6.2.3",
     "eslint-plugin-prettier": ">=3.1.0",
     "eslint-plugin-react": ">=7.14.2",
     "generate-changelog": ">=1.8.0",
@@ -51,6 +51,8 @@
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
-    "@babel/register": "^7.4.4"
+    "@babel/register": "^7.4.4",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.18.0"
   }
 }
