@@ -1,6 +1,6 @@
 # Anza scripts
 
-Collection of useful npm scripts for daily development in javascript. This library exposes `anza-lint` script which uses eslint to lint `src/` and `test/`  `js and jsx` files. Also it expose `anza-commit` which is a commit command on top of commitizen, and it is almost the same as `git-cz` but with additional
+Collection of useful npm scripts for daily development in javascript. This library exposes `anza-lint` script which uses eslint to lint `src/` and `test/` `js and jsx` files. Also it expose `anza-commit` which is a commit command on top of commitizen, and it is almost the same as `git-cz` but with additional
 configurations. Lastly but not least it expose `anza-changelog` which uses `generate-changelog` library to generate changelog based on commit messages.
 
 ## Installation
@@ -19,7 +19,7 @@ yarn add @BenMaruchu/anza-scripts
 
 ## Usage
 
-In your `package.json` file in scripts object can just do as
+In your `package.json` file in scripts object you can just do as
 
 ```json
 
@@ -30,6 +30,8 @@ In your `package.json` file in scripts object can just do as
 }
 ...
 ```
+
+> for react project in lint `script` use `anza-lint-react` instead
 
 ### Todo
 
