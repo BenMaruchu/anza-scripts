@@ -1,4 +1,4 @@
-# Anza scripts
+# Anza scripts(WIP)
 
 Collection of useful npm scripts for daily development in javascript. This library exposes `anza-lint` script which uses eslint to lint `src/` and `test/` `js and jsx` files. Also it expose `anza-commit` which is a commit command on top of commitizen, and it is almost the same as `git-cz` but with additional
 configurations. Lastly but not least it expose `anza-changelog` which uses `generate-changelog` library to generate changelog based on commit messages.
